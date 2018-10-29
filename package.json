@@ -1,0 +1,48 @@
+{
+  "name": "throttle-async-rxjs-pipe",
+  "version": "0.0.0",
+  "description": "A pipe functions for rxjs 6+ which accepts a number n and a 'wait' observable and emits n elements of the source stream and waits for an event on the 'wait' observable",
+  "main": "./dist/src/index.js",
+  "scripts": {
+    "test": "jest",
+    "build-dev": "del dist/* && tsc -p dev.tsconfig.json",
+    "build": "del dist/* && tsc -p tsconfig.json",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bjesuiter/throttle-async-rxjs-pipe.git"
+  },
+  "keywords": [
+    "rxjs",
+    "rxjs6",
+    "rxjs6+",
+    "rxjs-pipe",
+    "pipe",
+    "rxjs6-pipe",
+    "rxjs6+-pipe",
+    "rxjs-throttle-async",
+    "throttle",
+    "observable"
+  ],
+  "author": "Benjamin Jesuiter <bjesuiter@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/bjesuiter/throttle-async-rxjs-pipe/issues"
+  },
+  "homepage": "https://github.com/bjesuiter/throttle-async-rxjs-pipe#readme",
+  "files": [
+    "dist/**/*"
+  ],
+  "dependencies": {
+    "rxjs": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.1",
+    "@types/node": "^10.9.1",
+    "del-cli": "^1.1.0",
+    "jest": "^23.5.0",
+    "ts-jest": "^23.1.4",
+    "typescript": "^3.0.1"
+  }
+}
