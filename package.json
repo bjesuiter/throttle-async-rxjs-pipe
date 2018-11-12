@@ -1,7 +1,7 @@
 {
   "name": "throttle-async-rxjs-pipe",
   "version": "0.0.0",
-  "description": "A pipe functions for rxjs 6+ which accepts a number n and a 'wait' observable and emits n elements of the source stream and waits for an event on the 'wait' observable",
+  "description": "A pipe functions for rxjs 6+ which accepts a 'wait' observable, emits 1 elements of the source stream and waits for an event on the 'wait' observable.",
   "main": "./dist/src/index.js",
   "scripts": {
     "test": "jest",
