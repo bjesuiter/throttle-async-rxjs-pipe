@@ -1,18 +1,9 @@
-module.exports = function (wallaby) {
-    var compilerOptions = Object.assign(
-        require('./dev.tsconfig.json').compilerOptions
-    );
-
-    compilerOptions.module = 'CommonJs';
-
-    // noinspection JSUnresolvedFunction
+module.exports = function () {
     return {
         files: [
-            {pattern: 'tsconfig.json', load: false},
-            {pattern: 'dev.tsconfig.json', load: false},
-            {pattern: 'jest.config.js', load: false},
-            {pattern: 'src/setup-jest.ts', load: false, instrument: false},
-            {pattern: 'src/jest-global-mocks.ts', load: false, instrument: false},
+            'tsconfig.json',
+            'dev.tsconfig.json',
+            'src/**/*.ts',
             '!src/**/*.spec.ts'
         ],
 
@@ -23,15 +14,6 @@ module.exports = function (wallaby) {
             runner: 'node'
         },
 
-        testFramework: 'jest',
-        compilers: {
-            '**/*.ts': wallaby.compilers.typeScript(compilerOptions)
-        },
-
-        setup: function (wallaby) {
-            const jestConfig = require('./jest.config.js');
-            // noinspection JSUnresolvedFunction
-            wallaby.testFramework.configure(jestConfig);
-        }
+        testFramework: 'jest'
     };
 };
