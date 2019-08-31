@@ -1,4 +1,7 @@
 # throttle-async-rxjs-pipe
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/bjesuiter/throttle-async-rxjs-pipe.svg)](https://greenkeeper.io/)
+
 A pipe functions for rxjs 6+ which accepts a 'wait' observable, emits 1 elements of the source stream 
 and waits for an event on the 'wait' observable.
 
