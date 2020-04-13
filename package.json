@@ -2,15 +2,16 @@
   "name": "throttle-async-rxjs-pipe",
   "version": "1.0.0",
   "description": "A pipe functions for rxjs 6+ which accepts a 'wait' observable, emits 1 elements of the source stream and waits for an event on the 'wait' observable.",
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/es5/index.js",
+  "es2015": "dist/esm/index.js",
+  "types": "dist/es5/index.d.ts",
   "scripts": {
     "test": "jest",
     "clean": "del dist/*",
-    "compile:dev": "tsc -p tsconfig.dev.json",
-    "compile:prod": "tsc -p tsconfig.json",
-    "build": "run-s clean compile:dev",
-    "build:prod": "run-s clean compile:prod",
+    "compile:es5": "tsc -p tsconfig.json",
+    "compile:esm": "tsc -p tsconfig.esm-es6.json",
+    "build": "run-s clean compile:es5",
+    "build:prod": "run-s clean compile:es5 compile:esm",
     "prepare": "npm run build:prod",
     "publish:test": "npm publish --dry-run"
   },
@@ -51,6 +52,7 @@
     "jest": "^25.3.0",
     "jest-preset-typescript": "^1.2.0",
     "npm-run-all": "^4.1.5",
+    "shx": "^0.3.2",
     "ts-jest": "^25.3.1",
     "typescript": "^3.8.3"
   }
