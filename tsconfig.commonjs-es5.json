@@ -1,0 +1,14 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "sourceMap": true,
+    "composite": false,
+    "removeComments": true,
+    "downlevelIteration": true,
+    "mapRoot": "dist",
+    "sourceRoot": "src",
+    "outDir": "dist/lib-es5"
+  }
+}
