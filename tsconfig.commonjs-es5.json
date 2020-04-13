@@ -3,12 +3,15 @@
   "compilerOptions": {
     "target": "es5",
     "module": "commonjs",
+    "lib": [
+      "es6"
+    ],
     "sourceMap": true,
     "composite": false,
     "removeComments": true,
     "downlevelIteration": true,
     "mapRoot": "dist",
     "sourceRoot": "src",
-    "outDir": "dist/lib-es5"
+    "outDir": "dist/es5"
   }
 }
