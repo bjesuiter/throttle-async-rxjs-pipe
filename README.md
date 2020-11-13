@@ -38,6 +38,7 @@ until `windowResizeEnd$` emits a value.
   The parameter n should be configureable when instantiating throttleAsync.
 - Make the parameter n dynamic by using the value of the `waitUntil$` observable
   as a number of how many events to emit next.
+- Add https://github.com/xripcsu/rxjs-watcher to help visualize the function of these operators
 
 ## Changelog
 
