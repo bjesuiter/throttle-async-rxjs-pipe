@@ -1,1 +1,0 @@
-export {throttleAsync} from './lib/throttle-async'
