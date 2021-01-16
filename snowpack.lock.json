@@ -1,9 +1,0 @@
-{
-  "imports": {
-    "rxjs": "https://cdn.skypack.dev/rxjs@v6.6.3-Hu9diWQqdrdn7RiydblX",
-    "rxjs/": "https://cdn.skypack.dev/rxjs@v6.6.3-Hu9diWQqdrdn7RiydblX/"
-  },
-  "dependencies": {
-    "rxjs": "^6.0.0"
-  }
-}
