@@ -40,7 +40,20 @@ until `windowResizeEnd$` emits a value.
   as a number of how many events to emit next.
 - Add https://github.com/xripcsu/rxjs-watcher to help visualize the function of these operators
 
+## Tooling
+
+- [Pika Pack TS Compile](https://www.npmjs.com/package/@pika/plugin-ts-standard-pkg)
+
 ## Changelog
+
+## [1.2.0] - WIP
+
+- Switched to @pika/pack for building the library, which unlocks lot more formats for consuming the library:
+  - dist-src (ES2020, ESM)
+  - dist-node (ES2020, Require)
+  - dist-types (Typescript Typings)
+  - dist-web (ES2020, Inline ESM)
+  - dist-deno (Typescript Source)
 
 ## [1.1.0] - 2020-04-13
 
