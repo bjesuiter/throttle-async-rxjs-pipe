@@ -15,7 +15,7 @@
     "sourceMap": true, /* Generates corresponding '.map' file. */
     "outDir": "./dist/es5",
     /* Redirect output structure to the directory. */
-    "rootDir": "./src",
+    "rootDir": "./",
     /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */
     "composite": false, /* Enable project compilation */
     // "removeComments": true,
@@ -65,7 +65,9 @@
   },
   "include": [
     "src/**/*",
-    "example/**/*"
+    "example/**/*",
+    "lib/src/throttle-async.ava.ts",
+    "lib/index.ts"
   ],
   "exclude": [
     "node_modules",
