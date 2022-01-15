@@ -2,8 +2,9 @@
 	"name": "throttle-async-rxjs-pipe",
 	"version": "1.1.0",
 	"description": "A pipe functions for rxjs 6+ which accepts a 'wait' observable, emits 1 elements of the source stream and waits for an event on the 'wait' observable.",
+	"type": "module",
 	"scripts": {
-		"test": "ava",
+		"test": "web-test-runner --config web-test-runner.config.js --node-resolve ",
 		"clean": "del dist/*",
 		"compile:es5": "tsc -p tsconfig.json",
 		"compile:esm": "tsc -p tsconfig.esm-es6.json",
@@ -53,6 +54,7 @@
 		"@pika/plugin-ts-standard-pkg": "^0.9.2",
 		"@types/jest": "^27.4.0",
 		"@types/node": "^17.0.8",
+		"@web/dev-server-esbuild": "^0.2.16",
 		"@web/test-runner": "^0.13.25",
 		"ava": "^4.0.1",
 		"del-cli": "^4.0.1",
