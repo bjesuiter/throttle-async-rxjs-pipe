@@ -3,6 +3,12 @@
 	"source": ["**/*.ts"],
 	"extensions": ["ts"],
 	"require": ["ts-node/register"],
+	"typescript": {
+		"rewritePaths": {
+			"src/": "build/"
+		},
+		"compile": false
+	},
 	"match": [],
 	"concurrency": 5,
 	"failFast": true,
