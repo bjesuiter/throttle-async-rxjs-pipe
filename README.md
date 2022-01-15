@@ -3,6 +3,10 @@
 A pipe functions for rxjs 6+ which accepts a 'wait' observable, emits 1 elements of the source stream
 and waits for an event on the 'wait' observable.
 
+## Changelog
+
+The latest changelog on master: https://github.com/bjesuiter/throttle-async-rxjs-pipe/blob/master/CHANGELOG.md
+
 ## What does throttleAsync do (in order)?
 
 1. Get a waitUntil\$ observable as parameter
@@ -43,27 +47,3 @@ until `windowResizeEnd$` emits a value.
 ## Tooling
 
 - [Pika Pack TS Compile](https://www.npmjs.com/package/@pika/plugin-ts-standard-pkg)
-
-## Changelog
-
-## [1.2.0] - WIP
-
-- Switched to @pika/pack for building the library, which unlocks lot more formats for consuming the library:
-  - dist-src (ES2020, ESM)
-  - dist-node (ES2020, Require)
-  - dist-types (Typescript Typings)
-  - dist-web (ES2020, Inline ESM)
-  - dist-deno (Typescript Source)
-
-## [1.1.0] - 2020-04-13
-
-- Updated Dependencies to fix dependency security issues
-- Improved npm packaging for easier usage
-
-### [1.0.0] - 2018-11-12
-
-_Initial Release_
-
-#### Features
-
-- throttleAsync pipe which emits one event and then waits for `waitUntil$` observable emissions
