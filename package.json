@@ -63,26 +63,6 @@
 		"ts-node": "^10.4.0",
 		"typescript": "^4.5.4"
 	},
-	"ava": {
-		"files": [
-			"**/*.ava.ts"
-		],
-		"source": [
-			"**/*.ts"
-		],
-		"extensions": [
-			"ts"
-		],
-		"require": [
-			"ts-node/register"
-		],
-		"match": [],
-		"concurrency": 5,
-		"failFast": true,
-		"failWithoutAssertions": true,
-		"tap": true,
-		"powerAssert": false
-	},
 	"@pika/pack": {
 		"pipeline": [
 			[

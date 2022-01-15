@@ -1,0 +1,12 @@
+{
+	"files": ["**/*.ava.ts"],
+	"source": ["**/*.ts"],
+	"extensions": ["ts"],
+	"require": ["ts-node/register"],
+	"match": [],
+	"concurrency": 5,
+	"failFast": true,
+	"failWithoutAssertions": true,
+	"tap": true,
+	"powerAssert": false
+}
