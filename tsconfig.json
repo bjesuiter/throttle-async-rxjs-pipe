@@ -3,7 +3,8 @@
     "target": "es2020",
     "module": "esnext",
     "strict": true,
-    "moduleResolution": "node"
+    "moduleResolution": "node",
+    "isolatedModules": true
   },
   "lib": [
     "esnext"
