@@ -1,3 +1,8 @@
+# ARCHIVED! 
+
+Migrated into monorepo: [bjesuiter/rxjs-pipes](https://github.com/bjesuiter/rxjs-pipes/tree/main/packages/throttle-async)
+
+----
 # throttle-async-rxjs-pipe
 
 A pipe functions for rxjs 6+ which accepts a 'wait' observable, emits 1 elements of the source stream
